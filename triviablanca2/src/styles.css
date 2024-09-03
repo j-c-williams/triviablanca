@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #BB86FC;
+}
+
+p {
+    font-size: 1.2em;
+    color: #B0B0B0;
+}
+
+main {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #1F1F1F;
+    color: #E0E0E0;
+    border: 2px solid #BB86FC;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+.rules {
+    text-align: left;
+    padding-bottom: 50px;
+    max-width: 500px;
+}
