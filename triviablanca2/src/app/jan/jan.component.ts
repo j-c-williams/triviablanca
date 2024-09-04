@@ -19,7 +19,6 @@ export class JanComponent {
   checkAnswer(inputValue: string) {
     const sanitizedInput = inputValue.trim().toLowerCase().replace(/\s+/g, '');
     const hashedInput = CryptoJS.SHA256(sanitizedInput).toString(CryptoJS.enc.Hex);
-    console.log(hashedInput)
     this.wrongAnswerText = ""
         
     if (hashedInput === this.correctAnswer) {
