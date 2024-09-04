@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/triviablanca2",
+            "outputPath": "dist/triviablanca2/browser",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -23,6 +23,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/_headers",
               {
                 "glob": "**/*",
                 "input": "public",
