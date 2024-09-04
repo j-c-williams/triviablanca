@@ -1,6 +1,6 @@
 [build]
   base = "triviablanca2"
-  command = "npm run build --base-href browser"
+  command = "npm run build --base-href triviablanca2"
   publish = "dist/triviablanca2/browser"
 
 [build.environment]
