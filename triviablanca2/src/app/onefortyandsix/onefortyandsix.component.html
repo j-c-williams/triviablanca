@@ -1,1 +1,11 @@
-<p>onefortyandsix works!</p>
+<div>
+    <h1 class="question-number">3</h1>
+    <p>If Scott were a superhero, which one would he be?</p>
+    <img src="../../images/ouioui.jpg" class="question-picture">
+    <div class="input-submit">
+      <input type="text" class="answer-input" placeholder="Your answer here..." #answerInput (keydown.enter)="checkAnswer(answerInput.value)">
+      <button class="submit-btn" (click)="checkAnswer(answerInput.value)">Submit</button>
+      <p class="wrong-answer-text">{{wrongAnswerText}}</p>
+    </div>
+  </div>
+  
