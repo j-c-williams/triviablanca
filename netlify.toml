@@ -26,22 +26,23 @@
   from = "/assets/*"
   to = "/assets/:splat"
   status = 200
-  force = true
+  force = false
 
 [[redirects]]
   from = "/*.js"
   to = "/:splat.js"
   status = 200
-  force = true
+  force = false
 
 [[redirects]]
   from = "/*.css"
   to = "/:splat.css"
   status = 200
-  force = true
+  force = false
 
 # SPA fallback
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
