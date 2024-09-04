@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import * as CryptoJS from 'crypto-js';
 
 @Component({
   selector: 'app-rot17',
@@ -8,5 +10,23 @@ import { Component } from '@angular/core';
   styleUrl: './rot17.component.css'
 })
 export class Rot17Component {
+  correctAnswer: string = '3c6aa9b7b9cdc7328d2bc05f911ef805ba22cda7df0d58b5cfd9bb0dcafc802e';
+  wrongAnswerText: string = ''
+  
+  constructor(private router: Router) {
+  }
 
+  checkAnswer(inputValue: string) {
+    const sanitizedInput = inputValue.trim().toLowerCase().replace(/\s+/g, '');
+    const hashedInput = CryptoJS.SHA256(sanitizedInput).toString(CryptoJS.enc.Hex);
+    this.wrongAnswerText = ""
+        
+    if (hashedInput === this.correctAnswer) {
+      console.log('Correct answer!');
+      this.router.navigate(['../contrahumanidad']);
+    } else {
+      console.log('Incorrect answer.');
+      this.wrongAnswerText = "Nope, try again"
+    }
+  }
 }

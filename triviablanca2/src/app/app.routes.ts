@@ -4,6 +4,7 @@ import { LandingComponent } from './landing/landing.component';
 import { YubaComponent } from './yuba/yuba.component';
 import { JanComponent } from './jan/jan.component';
 import { Rot17Component } from './rot17/rot17.component';
+import { ContraHumanidadComponent } from './contra-humanidad/contra-humanidad.component';
 import { OnefortyandsixComponent } from './onefortyandsix/onefortyandsix.component';
 
 export const routes: Routes = [
@@ -12,6 +13,7 @@ export const routes: Routes = [
   { path: 'jan', component: JanComponent},
   { path: '140.6', component: OnefortyandsixComponent},
   { path: 'rot17', component: Rot17Component },
+  { path: 'contrahumanidad', component: ContraHumanidadComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
   // Add more routes as needed
 ];
