@@ -25,6 +25,7 @@
               "src/assets",
               "src/_headers",
               "src/_redirects",
+              "src/images",
               {
                 "glob": "**/*",
                 "input": "public",
