@@ -1,5 +1,5 @@
 [build]
-  base = "triviablanca2"  # Adjust this to the directory containing your package.json
+  base = "triviablanca2"  # Adjust this if needed
   command = "npm run build -- --configuration production"
   publish = "dist/triviablanca2/browser"
 
@@ -31,3 +31,9 @@
   for = "/*.js"
     [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "application/javascript; charset=utf-8"
+
+[[headers]]
+  for = "/*.mjs"
+    [headers.values]
+    Content-Type = "application/javascript; charset=utf-8"
