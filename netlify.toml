@@ -1,6 +1,6 @@
 [build]
   base = "triviablanca2"
-  command = "npm run build"
+  command = "npm run build -- --configuration production"
   publish = "dist/triviablanca2"
 
 [build.environment]
