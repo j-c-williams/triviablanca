@@ -6,6 +6,7 @@ import { YubaComponent } from './yuba/yuba.component';
 export const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'yuba', component: YubaComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
   // Add more routes as needed
 ];
 
