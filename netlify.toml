@@ -1,5 +1,4 @@
 [build]
-  base = "trivia-blanca-2/triviablanca2"
   command = "npm run build -- --configuration production"
   publish = "dist/triviablanca2"
 
