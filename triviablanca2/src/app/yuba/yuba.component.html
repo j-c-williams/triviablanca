@@ -1,1 +1,11 @@
-<p>yuba works!</p>
+<div>
+    <h1 class="question-number">1</h1>
+    <p>What is the name of the lake house?</p>
+    <img src="../../images/yuba.png" class="question-picture">
+    <div class="input-submit">
+      <input type="text" class="answer-input" placeholder="Your answer here..." #answerInput (keydown.enter)="checkAnswer(answerInput.value)">
+      <button class="submit-btn" (click)="checkAnswer(answerInput.value)">Submit</button>
+      <p class="wrong-answer-text">{{wrongAnswerText}}</p>
+    </div>
+  </div>
+  
