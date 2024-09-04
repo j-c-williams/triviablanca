@@ -4,4 +4,9 @@
   publish = "dist/triviablanca2"
 
 [build.environment]
-  NODE_VERSION = "18.19.0"  # Updated to meet Angular CLI requirements
+  NODE_VERSION = "18.19.0"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
