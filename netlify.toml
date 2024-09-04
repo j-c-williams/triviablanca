@@ -1,0 +1,7 @@
+[build]
+  base = "triviablanca2"
+  command = "npm run build"
+  publish = "dist/triviablanca2"
+
+[build.environment]
+  NODE_VERSION = "16" # Adjust this if you're using a different Node.js version 
