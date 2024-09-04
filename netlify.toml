@@ -1,11 +1,11 @@
 [build]
-  base = "triviablanca2"
+  base = "trivia-blanca-2/triviablanca2"
   command = "npm run build -- --configuration production"
   publish = "dist/triviablanca2"
 
 [build.environment]
   NODE_VERSION = "18.19.0"
-
+git
 [[redirects]]
   from = "/*"
   to = "/index.html"
