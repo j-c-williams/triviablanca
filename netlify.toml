@@ -4,4 +4,4 @@
   publish = "dist/triviablanca2"
 
 [build.environment]
-  NODE_VERSION = "16" # Adjust this if you're using a different Node.js version 
+  NODE_VERSION = "18.19.0"  # Updated to meet Angular CLI requirements
