@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/triviablanca2/browser",
+            "outputPath": "dist/triviablanca2",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
