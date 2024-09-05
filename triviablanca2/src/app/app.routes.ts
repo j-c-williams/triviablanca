@@ -7,6 +7,7 @@ import { Rot17Component } from './rot17/rot17.component';
 import { ContraHumanidadComponent } from './contra-humanidad/contra-humanidad.component';
 import { OnefortyandsixComponent } from './onefortyandsix/onefortyandsix.component';
 import { EnciamComponent } from './enciam/enciam.component';
+import { JackComponent } from './jack/jack.component';
 
 export const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -16,6 +17,7 @@ export const routes: Routes = [
   { path: 'rot17', component: Rot17Component },
   { path: 'contrahumanidad', component: ContraHumanidadComponent },
   { path: 'enciam', component: EnciamComponent },
+  { path: 'jack', component: JackComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
