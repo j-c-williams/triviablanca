@@ -6,6 +6,7 @@ import { JanComponent } from './jan/jan.component';
 import { Rot17Component } from './rot17/rot17.component';
 import { ContraHumanidadComponent } from './contra-humanidad/contra-humanidad.component';
 import { OnefortyandsixComponent } from './onefortyandsix/onefortyandsix.component';
+import { EnciamComponent } from './enciam/enciam.component';
 
 export const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -14,8 +15,8 @@ export const routes: Routes = [
   { path: '140.6', component: OnefortyandsixComponent},
   { path: 'rot17', component: Rot17Component },
   { path: 'contrahumanidad', component: ContraHumanidadComponent },
+  { path: 'enciam', component: EnciamComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
-  // Add more routes as needed
 ];
 
 @NgModule({
