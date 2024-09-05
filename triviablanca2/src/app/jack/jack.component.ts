@@ -30,7 +30,7 @@ export class JackComponent implements OnInit {
 
     if (hashedInput === this.correctAnswer) {
       console.log('Correct answer!');
-      this.router.navigate(['../school']);
+      this.router.navigate(['../cobb']);
     } else {
       console.log('Incorrect answer.');
       this.wrongAnswerText = 'Nope, try again';
