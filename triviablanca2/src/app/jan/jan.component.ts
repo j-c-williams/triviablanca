@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
 
@@ -13,7 +13,14 @@ export class JanComponent {
   correctAnswer: string = 'e86421cb8ca428710814b0043f32a46d18d7caecc1a04620c34dce3057091dc7';
   wrongAnswerText: string = ''
   
-  constructor(private router: Router) {
+  @ViewChild('answerInput') answerInput!: ElementRef;
+
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.answerInput.nativeElement.focus();
+    });
   }
 
   checkAnswer(inputValue: string) {

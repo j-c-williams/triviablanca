@@ -1,1 +1,12 @@
-<p>jack works!</p>
+<div>
+    <h1 class="question-number">7</h1>
+    <p>It took a year and a half for Shauna to build me 5 times.</p>
+    <img class="image-container" src="../../images/try_spanish.jpg" class="question-picture">
+    <div class="input-submit">
+      <input type="text" class="answer-input" placeholder="Your answer here..." #answerInput (keydown.enter)="checkAnswer(answerInput.value)">
+      <button class="submit-btn" (click)="checkAnswer(answerInput.value)">Submit</button>
+      <p class="wrong-answer-text">{{wrongAnswerText}}</p>
+      <p class="hint">try spanish</p>
+    </div>
+  </div>
+  
