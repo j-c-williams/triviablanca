@@ -29,10 +29,8 @@ export class EnciamComponent {
     this.wrongAnswerText = ""
         
     if (hashedInput === this.correctAnswer) {
-      console.log('Correct answer!');
       this.router.navigate(['../jack']);
     } else {
-      console.log('Incorrect answer.');
       this.wrongAnswerText = "Nope, try again"
     }
   }

@@ -29,10 +29,8 @@ export class JackComponent implements OnInit {
     this.wrongAnswerText = '';
 
     if (hashedInput === this.correctAnswer) {
-      console.log('Correct answer!');
       this.router.navigate(['../cobb']);
     } else {
-      console.log('Incorrect answer.');
       this.wrongAnswerText = 'Nope, try again';
     }
   }

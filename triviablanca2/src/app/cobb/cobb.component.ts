@@ -29,13 +29,10 @@ export class CobbComponent {
     this.wrongAnswerText = "";
     
     if (hashedInput === this.correctAnswer) {
-      console.log('Correct answer!');
       this.router.navigate(['../010']);
     } else if (hashedInput === '84cf62eedd2d8b5d670b055cd778116aac1dc919ce83d843feeb2f9d70dd4156') {
-      console.log('Incorrect answer.');
       this.wrongAnswerText = "Good idea, but no.";
     } else {
-      console.log('Incorrect answer.');
       this.wrongAnswerText = 'Nope, try again';
     }
   }  

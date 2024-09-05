@@ -1,0 +1,10 @@
+<div>
+    <h1 class="question-number">10</h1>
+    <p>What is 6/7's name?</p>
+    <img src="../../images/boo.jpg" class="question-picture">
+    <div class="input-submit">
+      <input type="text" class="answer-input" placeholder="Your answer here..." #answerInput (keydown.enter)="checkAnswer(answerInput.value)">
+      <button class="submit-btn" (click)="checkAnswer(answerInput.value)">Submit</button>
+      <p class="wrong-answer-text">{{wrongAnswerText}}</p>
+    </div>
+  </div>

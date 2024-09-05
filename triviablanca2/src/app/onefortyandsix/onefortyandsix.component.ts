@@ -29,10 +29,8 @@ export class OnefortyandsixComponent {
     this.wrongAnswerText = ""
         
     if (hashedInput === this.correctAnswer) {
-      console.log('Correct answer!');
       this.router.navigate(['../rot17']);
     } else {
-      console.log('Incorrect answer.');
       this.wrongAnswerText = "Nope, try again"
     }
   }

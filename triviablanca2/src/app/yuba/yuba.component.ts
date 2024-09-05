@@ -29,10 +29,8 @@ export class YubaComponent {
     this.wrongAnswerText = ""
         
     if (hashedInput === this.correctAnswer) {
-      console.log('Correct answer!');
       this.router.navigate(['../jan']);
     } else {
-      console.log('Incorrect answer.');
       this.wrongAnswerText = "Nope, try again"
     }
   }

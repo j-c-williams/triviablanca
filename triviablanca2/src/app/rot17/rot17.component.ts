@@ -29,10 +29,8 @@ export class Rot17Component {
     this.wrongAnswerText = ""
         
     if (hashedInput === this.correctAnswer) {
-      console.log('Correct answer!');
       this.router.navigate(['../contrahumanidad']);
     } else {
-      console.log('Incorrect answer.');
       this.wrongAnswerText = "Nope, try again"
     }
   }

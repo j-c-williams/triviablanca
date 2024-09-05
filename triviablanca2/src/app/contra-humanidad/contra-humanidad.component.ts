@@ -29,13 +29,10 @@ export class ContraHumanidadComponent {
     this.wrongAnswerText = "";
     
     if (hashedInput === this.correctAnswer) {
-      console.log('Correct answer!');
       this.router.navigate(['../enciam']);
     } else if (hashedInput === '2da4c58b26425bc00d7ab5a89131093e84d4273ecac791d5c905814bb6656a8a') {
-      console.log('Incorrect answer.');
       this.wrongAnswerText = "The ...";
     } else {
-      console.log('Incorrect answer.');
       this.wrongAnswerText = 'Nope, try again';
     }
   }  
