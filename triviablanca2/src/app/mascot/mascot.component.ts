@@ -3,14 +3,14 @@ import { Router } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
 
 @Component({
-  selector: 'app-estevao',
+  selector: 'app-mascot',
   standalone: true,
   imports: [],
-  templateUrl: './estevao.component.html',
-  styleUrl: './estevao.component.css'
+  templateUrl: './mascot.component.html',
+  styleUrl: './mascot.component.css'
 })
-export class EstevaoComponent {
-  correctAnswer: string = '70c238e4c30cbf06e18852d597396da0600c1a46bf975225225a8de992a531aa';
+export class MascotComponent {
+  correctAnswer: string = '4c94485e0c21ae6c41ce1dfe7b6bfaceea5ab68e40a2476f50208e526f506080';
   wrongAnswerText: string = ''
   
   @ViewChild('answerInput') answerInput!: ElementRef;
@@ -30,8 +30,8 @@ export class EstevaoComponent {
     
     if (hashedInput === this.correctAnswer) {
       this.router.navigate(['../mascot']);
-    } else if (hashedInput === '0f12e4c8a32b102cd666495f21fdbc806e32f019fd8086e6bec812b847be1753' || hashedInput == 'f6a40c3046820cd95f982200b5084910449eb35cfdebd2ee56b8ee577b981772') {
-      this.wrongAnswerText = "Not the one I'm looking for";
+    } else if (hashedInput === '1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9') {
+      this.wrongAnswerText = "Don't include spaces";
     } else {
       this.wrongAnswerText = 'Nope, try again';
     }
