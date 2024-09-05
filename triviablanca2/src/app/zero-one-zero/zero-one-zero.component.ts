@@ -3,14 +3,14 @@ import { Router } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
 
 @Component({
-  selector: 'app-cobb',
+  selector: 'app-zero-one-zero',
   standalone: true,
   imports: [],
-  templateUrl: './cobb.component.html',
-  styleUrl: './cobb.component.css'
+  templateUrl: './zero-one-zero.component.html',
+  styleUrl: './zero-one-zero.component.css'
 })
-export class CobbComponent {
-  correctAnswer: string = '652f2df4644862c8c071391d84e159480e27acf2e2475b7e0d8268797e06d4eb';
+export class ZeroOneZeroComponent {
+  correctAnswer: string = 'ecfca790327f25b9797ec0d19ed1b0c33cb2eca57cd456f290038fdcb12531a3';
   wrongAnswerText: string = ''
   
   @ViewChild('answerInput') answerInput!: ElementRef;
@@ -30,14 +30,13 @@ export class CobbComponent {
     
     if (hashedInput === this.correctAnswer) {
       console.log('Correct answer!');
-      this.router.navigate(['../010']);
-    } else if (hashedInput === '84cf62eedd2d8b5d670b055cd778116aac1dc919ce83d843feeb2f9d70dd4156') {
+      this.router.navigate(['../landing']);
+    } else if (hashedInput === 'dd76d302447e883a4e9ab7306eaadbd2fc27a43fff78dcef737c2025607bbd6b') {
       console.log('Incorrect answer.');
-      this.wrongAnswerText = "Good idea, but no.";
+      this.wrongAnswerText = "Close, try decimal instead of ascii.";
     } else {
       console.log('Incorrect answer.');
       this.wrongAnswerText = 'Nope, try again';
     }
   }  
 }
-

@@ -9,6 +9,7 @@ import { OnefortyandsixComponent } from './onefortyandsix/onefortyandsix.compone
 import { EnciamComponent } from './enciam/enciam.component';
 import { JackComponent } from './jack/jack.component';
 import { CobbComponent } from './cobb/cobb.component';
+import { ZeroOneZeroComponent } from './zero-one-zero/zero-one-zero.component';
 
 export const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -20,6 +21,7 @@ export const routes: Routes = [
   { path: 'enciam', component: EnciamComponent },
   { path: 'jack', component: JackComponent },
   { path: 'cobb', component: CobbComponent },
+  { path: '010', component: ZeroOneZeroComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
