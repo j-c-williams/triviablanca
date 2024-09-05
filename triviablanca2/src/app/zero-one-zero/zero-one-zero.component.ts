@@ -29,13 +29,10 @@ export class ZeroOneZeroComponent {
     this.wrongAnswerText = "";
     
     if (hashedInput === this.correctAnswer) {
-      console.log('Correct answer!');
-      this.router.navigate(['../landing']);
+      this.router.navigate(['../camera']);
     } else if (hashedInput === 'dd76d302447e883a4e9ab7306eaadbd2fc27a43fff78dcef737c2025607bbd6b') {
-      console.log('Incorrect answer.');
       this.wrongAnswerText = "Close, try decimal instead of ascii.";
     } else {
-      console.log('Incorrect answer.');
       this.wrongAnswerText = 'Nope, try again';
     }
   }  

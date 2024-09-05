@@ -1,3 +1,4 @@
+/* Global desktop styles (unchanged) */
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
@@ -51,15 +52,28 @@ button:hover {
     padding-bottom: 25px;
     max-width: 500px;
 }
-  
-  .question-picture {
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.question-picture {
     width: 400px;
     height: 400px;
     object-fit: cover;
     display: block;
-    margin: 0 auto; /* Center image horizontally */
-  }
-  
+    margin: 0 auto;
+}
 
 .question-title {
     font-size: 2.5em;
@@ -106,8 +120,39 @@ button:hover {
     font-size: 0.9em;
 }
 
-.hint {
-    color: #121212;
-    font-size: 0.9em;
-}
+/* Mobile-specific styles (using media queries) */
+@media (max-width: 768px) {
+    body {
+        padding-left: 20px;  /* Reduce padding for mobile */
+        padding-right: 20px;
+        height: auto; /* Adjust for overflow prevention */
+    }
 
+    h1 {
+        font-size: 2em; /* Slightly smaller for mobile */
+    }
+
+    .question-picture {
+        max-width: 100%;  /* Prevent image from getting too large */
+        height: auto; /* Keep aspect ratio */
+        margin: 0 auto;
+    }
+
+    .input-submit {
+        flex-direction: column; /* Stack input and button on mobile */
+    }
+
+    .answer-input {
+        max-width: 90%;  /* Prevent input from getting too large */
+        align-items: center;
+    }
+
+    .submit-btn {
+        max-width: 100%; /* Prevent button from getting too large */
+        margin-top: 10px; /* Spacing between input and button */
+    }
+
+    .rules {
+        padding: 0 10px; /* Adjust padding for readability */
+    }
+}

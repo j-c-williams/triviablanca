@@ -3,14 +3,14 @@ import { Router } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
 
 @Component({
-  selector: 'app-jan',
+  selector: 'app-camera',
   standalone: true,
   imports: [],
-  templateUrl: './jan.component.html',
-  styleUrl: './jan.component.css'
+  templateUrl: './camera.component.html',
+  styleUrl: './camera.component.css'
 })
-export class JanComponent {
-  correctAnswer: string = 'e86421cb8ca428710814b0043f32a46d18d7caecc1a04620c34dce3057091dc7';
+export class CameraComponent {
+  correctAnswer: string = 'd7c37eeedcb929ef59e110481ed670ccedc093879cadb936db4b42d00c7374a3';
   wrongAnswerText: string = ''
   
   @ViewChild('answerInput') answerInput!: ElementRef;
@@ -29,10 +29,9 @@ export class JanComponent {
     this.wrongAnswerText = ""
         
     if (hashedInput === this.correctAnswer) {
-      this.router.navigate(['../140.6']);
+      this.router.navigate(['../jack']);
     } else {
       this.wrongAnswerText = "Nope, try again"
     }
   }
 }
-
