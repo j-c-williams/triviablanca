@@ -8,7 +8,7 @@ import { ContraHumanidadComponent } from './contra-humanidad/contra-humanidad.co
 import { OnefortyandsixComponent } from './onefortyandsix/onefortyandsix.component';
 import { EnciamComponent } from './enciam/enciam.component';
 import { JackComponent } from './jack/jack.component';
-import { SchoolComponent } from './school/school.component';
+import { CobbComponent } from './cobb/cobb.component';
 
 export const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -19,7 +19,7 @@ export const routes: Routes = [
   { path: 'contrahumanidad', component: ContraHumanidadComponent },
   { path: 'enciam', component: EnciamComponent },
   { path: 'jack', component: JackComponent },
-  { path: 'school', component: SchoolComponent },
+  { path: 'cobb', component: CobbComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
