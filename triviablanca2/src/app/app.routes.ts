@@ -13,6 +13,7 @@ import { ZeroOneZeroComponent } from './zero-one-zero/zero-one-zero.component';
 import { CameraComponent } from './camera/camera.component';
 import { BallComponent } from './ball/ball.component';
 import { LoleinaComponent } from './loleina/loleina.component';
+import { EstevaoComponent } from './estevao/estevao.component';
 
 export const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -28,6 +29,7 @@ export const routes: Routes = [
   { path: 'camera', component: CameraComponent },
   { path: 'ball', component: BallComponent },
   { path: 'loleina', component: LoleinaComponent },
+  { path: 'estevao', component: EstevaoComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
