@@ -1,1 +1,10 @@
-<p>estevao works!</p>
+<div>
+    <h1 class="question-number">13</h1>
+    <p>Who founded his company?</p>
+    <img src="../../images/notjobs.png" class="question-picture">
+    <div class="input-submit">
+      <input type="text" class="answer-input" placeholder="Your answer here..." #answerInput (keydown.enter)="checkAnswer(answerInput.value)">
+      <button class="submit-btn" (click)="checkAnswer(answerInput.value)">Submit</button>
+      <p class="wrong-answer-text">{{wrongAnswerText}}</p>
+    </div>
+  </div>
