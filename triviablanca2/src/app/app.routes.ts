@@ -15,6 +15,7 @@ import { BallComponent } from './ball/ball.component';
 import { LoleinaComponent } from './loleina/loleina.component';
 import { EstevaoComponent } from './estevao/estevao.component';
 import { MascotComponent } from './mascot/mascot.component';
+import { TxComponent } from './tx/tx.component';
 
 export const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -32,6 +33,7 @@ export const routes: Routes = [
   { path: 'loleina', component: LoleinaComponent },
   { path: 'estevao', component: EstevaoComponent },
   { path: 'mascot', component: MascotComponent },
+  { path: 'tx', component: TxComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 

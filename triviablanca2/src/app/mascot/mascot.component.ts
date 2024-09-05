@@ -29,7 +29,7 @@ export class MascotComponent {
     this.wrongAnswerText = "";
     
     if (hashedInput === this.correctAnswer) {
-      this.router.navigate(['../mascot']);
+      this.router.navigate(['../tx']);
     } else if (hashedInput === '1b16b1df538ba12dc3f97edbb85caa7050d46c148134290feba80f8236c83db9') {
       this.wrongAnswerText = "Don't include spaces";
     } else {
