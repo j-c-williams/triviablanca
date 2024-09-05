@@ -11,6 +11,8 @@ import { JackComponent } from './jack/jack.component';
 import { CobbComponent } from './cobb/cobb.component';
 import { ZeroOneZeroComponent } from './zero-one-zero/zero-one-zero.component';
 import { CameraComponent } from './camera/camera.component';
+import { BallComponent } from './ball/ball.component';
+import { LoleinaComponent } from './loleina/loleina.component';
 
 export const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -24,6 +26,8 @@ export const routes: Routes = [
   { path: 'cobb', component: CobbComponent },
   { path: '010', component: ZeroOneZeroComponent },
   { path: 'camera', component: CameraComponent },
+  { path: 'ball', component: BallComponent },
+  { path: 'loleina', component: LoleinaComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
