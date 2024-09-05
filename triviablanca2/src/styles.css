@@ -9,8 +9,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 100px; /* Adjust padding for centering */
 }
 
 header {
@@ -30,7 +29,10 @@ p {
 }
 
 main {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all content */
+    text-align: center; /* Center text inside elements */
 }
 
 button {
@@ -47,10 +49,14 @@ button:hover {
     background-color: #333333;
 }
 
+.about {
+    max-width: 500px;
+}
+
 .rules {
     text-align: left;
     padding-bottom: 25px;
-    max-width: 500px;
+    max-width: 100%;
 }
 
 .question-container {
@@ -160,5 +166,9 @@ button:hover {
 
     .rules {
         padding: 0 10px; /* Adjust padding for readability */
+    }
+
+    .start-game {
+        margin-bottom: 4em;
     }
 }
