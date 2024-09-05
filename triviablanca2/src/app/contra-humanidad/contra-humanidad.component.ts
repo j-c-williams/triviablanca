@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
-
 @Component({
   selector: 'app-contra-humanidad',
   standalone: true,
@@ -13,7 +12,14 @@ export class ContraHumanidadComponent {
   correctAnswer: string = 'cff2c2ff3dc8c3541322e1f0041dbc687189b44fac25992d85e8456910d8f026';
   wrongAnswerText: string = ''
   
-  constructor(private router: Router) {
+  @ViewChild('answerInput') answerInput!: ElementRef;
+
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.answerInput.nativeElement.focus();
+    });
   }
 
   checkAnswer(inputValue: string) {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
 
@@ -13,7 +13,14 @@ export class EnciamComponent {
   correctAnswer: string = '09e5dd826947a6cb9446912185009c5a8ad4455a0ce1d5681366ebc1e8b8c456';
   wrongAnswerText: string = ''
   
-  constructor(private router: Router) {
+  @ViewChild('answerInput') answerInput!: ElementRef;
+
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.answerInput.nativeElement.focus();
+    });
   }
 
   checkAnswer(inputValue: string) {
