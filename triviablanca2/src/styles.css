@@ -160,6 +160,7 @@ button:hover {
 
     .answer-input {
         align-items: center;
+        margin-right: 0px;
     }
 
     .submit-btn {
