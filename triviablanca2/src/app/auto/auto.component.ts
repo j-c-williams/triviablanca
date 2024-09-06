@@ -3,14 +3,14 @@ import { Router } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
 
 @Component({
-  selector: 'app-zuck',
+  selector: 'app-auto',
   standalone: true,
   imports: [],
-  templateUrl: './zuck.component.html',
-  styleUrl: './zuck.component.css'
+  templateUrl: './auto.component.html',
+  styleUrl: './auto.component.css'
 })
-export class ZuckComponent {
-  correctAnswer: string = '51621d8abc37d29372e1b085482e6acbe1c6dea31f4a5435f7bb0c56d99ca50f';
+export class AutoComponent {
+  correctAnswer: string = '161f57332026177b9bdb935b89f24b20bcf60398be903e1049693c25b587144e';
   wrongAnswerText: string = ''
   
   @ViewChild('answerInput') answerInput!: ElementRef;
@@ -28,8 +28,8 @@ export class ZuckComponent {
     const hashedInput = CryptoJS.SHA256(sanitizedInput).toString(CryptoJS.enc.Hex);
     this.wrongAnswerText = "";
     
-    if (hashedInput === this.correctAnswer || hashedInput === '537eeb580b7091faa23363d1dff7f889f871d408f14f9eadcb7c47e8cfa8f339') {
-      this.router.navigate(['../zipline']);
+    if (hashedInput === this.correctAnswer) {
+      this.router.navigate(['../victoriousatlast']);
     } else {
       this.wrongAnswerText = 'Nope, try again';
     }

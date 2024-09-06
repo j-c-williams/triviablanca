@@ -22,6 +22,9 @@ import { FarrierComponent } from './farrier/farrier.component';
 import { CongratsComponent } from './congrats/congrats.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { ZuckComponent } from './zuck/zuck.component';
+import { AutoComponent } from './auto/auto.component';
+import { BeaufortComponent } from './beaufort/beaufort.component';
+import { ZiplineComponent } from './zipline/zipline.component';
 
 export const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -44,6 +47,10 @@ export const routes: Routes = [
   { path: 'themaker', component: TheMakerComponent },
   { path: 'farrier', component: FarrierComponent },
   { path: 'zuck', component: ZuckComponent },
+  { path: 'zipline', component: ZiplineComponent },
+  { path: 'auto', component: AutoComponent },
+  { path: 'beaufort', component: BeaufortComponent },
+  { path: 'auto/beaufort', component: BeaufortComponent },
   { path: 'victoriousatlast', component: CongratsComponent },
   { path: 'leaderboard', component: LeaderboardComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
