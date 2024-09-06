@@ -28,7 +28,7 @@ export class AutoComponent {
     const hashedInput = CryptoJS.SHA256(sanitizedInput).toString(CryptoJS.enc.Hex);
     this.wrongAnswerText = "";
     
-    if (hashedInput === this.correctAnswer) {
+    if (hashedInput === this.correctAnswer || hashedInput === 'f145c8e389810c51c00dc60598db116cc67fb19cc41c54cb9a89a89d7694b746' || hashedInput === '08bf50122b38b768e6d23c7ef1d0422b3f4e763cac9005c199e7aa98584b458d') {
       this.router.navigate(['../victoriousatlast']);
     } else {
       this.wrongAnswerText = 'Nope, try again';
