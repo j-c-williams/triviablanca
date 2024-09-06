@@ -1,0 +1,15 @@
+.leaderboard-entry {
+    display: grid;
+    grid-template-columns: 10em 15em 10em;
+    gap: 10px;
+    align-items: center;
+    text-align: left;
+}
+
+.leaderboard-entry-date {
+    text-align: right;
+}
+
+.restart-game-button {
+    margin: 1em;
+}

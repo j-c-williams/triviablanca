@@ -12,4 +12,8 @@ export class LandingComponent {
   startGame(): void {
     this.router.navigate(['/yuba']);
   }
+
+  sendToLeaderboard(): void {
+    this.router.navigate(['/leaderboard'])
+  }
 }
