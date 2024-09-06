@@ -30,6 +30,8 @@ export class CameraComponent {
         
     if (hashedInput === this.correctAnswer) {
       this.router.navigate(['../ball']);
+    } else if (hashedInput === 'bce8a58122cfb87468bd1abeb9cf4c61c130af941f323761c73de2e3b3fce1d6') {
+      this.wrongAnswerText = "Close, but you're missing something"
     } else {
       this.wrongAnswerText = "Nope, try again"
     }
