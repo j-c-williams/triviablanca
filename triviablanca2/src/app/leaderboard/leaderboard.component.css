@@ -16,6 +16,6 @@
 
 @media (max-width: 768px) {
     .leaderboard-entry {
-        grid-template-columns: 4em 6em 4em;
+        grid-template-columns: 4.5em 6.5em 4.5em;
     }
 }
