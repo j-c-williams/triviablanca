@@ -30,6 +30,8 @@ export class JackComponent implements OnInit {
 
     if (hashedInput === this.correctAnswer) {
       this.router.navigate(['../cobb']);
+    } else if (hashedInput === '222b0bd51fcef7e65c2e62db2ed65457013bab56be6fafeb19ee11d453153c80' || hashedInput === 'ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d') {
+      this.wrongAnswerText = "Close, but you're missing something"
     } else {
       this.wrongAnswerText = 'Nope, try again';
     }
