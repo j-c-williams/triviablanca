@@ -13,3 +13,9 @@
 .restart-game-button {
     margin: 1em;
 }
+
+@media (max-width: 768px) {
+    .leaderboard-entry {
+        grid-template-columns: 4em 6em 4em;
+    }
+}
