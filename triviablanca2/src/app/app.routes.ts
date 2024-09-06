@@ -16,6 +16,7 @@ import { LoleinaComponent } from './loleina/loleina.component';
 import { EstevaoComponent } from './estevao/estevao.component';
 import { MascotComponent } from './mascot/mascot.component';
 import { TxComponent } from './tx/tx.component';
+import { AnagramComponent } from './anagram/anagram.component';
 
 export const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -34,6 +35,7 @@ export const routes: Routes = [
   { path: 'estevao', component: EstevaoComponent },
   { path: 'mascot', component: MascotComponent },
   { path: 'tx', component: TxComponent },
+  { path: '16_14_15_5_6_3_13_4_7_9_10_11_12_19_17_18_8_2_1', component: AnagramComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
