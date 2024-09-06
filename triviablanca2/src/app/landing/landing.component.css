@@ -5,3 +5,10 @@
 .start-game {
     margin-bottom: 2em;
 }
+
+@media (max-width: 768px) {
+    .landing-header {
+        margin-top: 0.5em;
+        font-size: 2em; 
+    }
+}
