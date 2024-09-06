@@ -29,7 +29,7 @@ export class FarrierComponent {
     this.wrongAnswerText = "";
     
     if (hashedInput === this.correctAnswer) {
-      this.router.navigate(['../farrier']);
+      this.router.navigate(['../victoriousatlast']);
     } else {
       this.wrongAnswerText = 'Nope, try again';
     }

@@ -29,7 +29,7 @@ export class TheMakerComponent {
     this.wrongAnswerText = "";
     
     if (hashedInput === this.correctAnswer || hashedInput === 'ca6b085cd219df225ad5d78c0351bd5b714f062786c473d474bab4d6ce2db7fb' || hashedInput === '53aa8ee216324262c38b6ecea6f79ae9251632f5dead0cb50240c036ae362cf7') {
-      this.router.navigate(['../landing']);
+      this.router.navigate(['../farrier']);
     } else {
       this.wrongAnswerText = 'Nope, try again';
     }
