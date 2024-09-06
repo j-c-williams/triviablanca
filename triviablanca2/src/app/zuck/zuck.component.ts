@@ -3,14 +3,14 @@ import { Router } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
 
 @Component({
-  selector: 'app-farrier',
+  selector: 'app-zuck',
   standalone: true,
   imports: [],
-  templateUrl: './farrier.component.html',
-  styleUrl: './farrier.component.css'
+  templateUrl: './zuck.component.html',
+  styleUrl: './zuck.component.css'
 })
-export class FarrierComponent {
-  correctAnswer: string = '1efeede3ed0f3e3ba8b85d965f97406523678d4c38e698e2881be41bfd8d8510';
+export class ZuckComponent {
+  correctAnswer: string = '51621d8abc37d29372e1b085482e6acbe1c6dea31f4a5435f7bb0c56d99ca50f';
   wrongAnswerText: string = ''
   
   @ViewChild('answerInput') answerInput!: ElementRef;
@@ -28,8 +28,8 @@ export class FarrierComponent {
     const hashedInput = CryptoJS.SHA256(sanitizedInput).toString(CryptoJS.enc.Hex);
     this.wrongAnswerText = "";
     
-    if (hashedInput === this.correctAnswer) {
-      this.router.navigate(['../zuck']);
+    if (hashedInput === this.correctAnswer || hashedInput === '537eeb580b7091faa23363d1dff7f889f871d408f14f9eadcb7c47e8cfa8f339') {
+      this.router.navigate(['../victoriousatlast']);
     } else {
       this.wrongAnswerText = 'Nope, try again';
     }

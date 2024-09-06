@@ -21,6 +21,7 @@ import { TheMakerComponent } from './the-maker/the-maker.component';
 import { FarrierComponent } from './farrier/farrier.component';
 import { CongratsComponent } from './congrats/congrats.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { ZuckComponent } from './zuck/zuck.component';
 
 export const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -42,6 +43,7 @@ export const routes: Routes = [
   { path: '16_14_15_5_6_3_13_4_7_9_10_11_12_19_17_18_8_2_1', component: AnagramComponent },
   { path: 'themaker', component: TheMakerComponent },
   { path: 'farrier', component: FarrierComponent },
+  { path: 'zuck', component: ZuckComponent },
   { path: 'victoriousatlast', component: CongratsComponent },
   { path: 'leaderboard', component: LeaderboardComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
