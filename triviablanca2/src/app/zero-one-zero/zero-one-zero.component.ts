@@ -30,8 +30,10 @@ export class ZeroOneZeroComponent {
     
     if (hashedInput === this.correctAnswer) {
       this.router.navigate(['../camera']);
+    } else if (hashedInput === '1924572596885038e4afef8457fa441ffb992e52101a719c4d64b8d963889890') {
+      this.wrongAnswerText = "Close, but you're missing something"
     } else if (hashedInput === 'dd76d302447e883a4e9ab7306eaadbd2fc27a43fff78dcef737c2025607bbd6b') {
-      this.wrongAnswerText = "Close, try decimal instead of ascii.";
+      this.wrongAnswerText = "Close, try decimal instead of ascii";
     } else {
       this.wrongAnswerText = 'Nope, try again';
     }
