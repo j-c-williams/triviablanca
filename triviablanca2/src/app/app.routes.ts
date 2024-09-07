@@ -43,7 +43,7 @@ export const routes: Routes = [
   { path: 'estevao', component: EstevaoComponent },
   { path: 'mascot', component: MascotComponent },
   { path: 'tx', component: TxComponent },
-  { path: '16_14_15_5_6_3_13_4_7_9_10_11_12_19_17_18_8_2_1', component: AnagramComponent },
+  { path: '16_14_15_5_6_3_13_4_7_9_10_11_12_17_18_8_2_1', component: AnagramComponent },
   { path: 'themaker', component: TheMakerComponent },
   { path: 'farrier', component: FarrierComponent },
   { path: 'zuck', component: ZuckComponent },
