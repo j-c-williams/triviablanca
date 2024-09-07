@@ -32,6 +32,10 @@ export class BallComponent {
       this.router.navigate(['../loleina']);
     } else if (hashedInput === 'f02c96357481972443a2eb6d2861c803fa7790fb7d0225b2f54b6beba964f4ad') {
       this.wrongAnswerText = "Different kind of splash"
+    } else if (hashedInput === '13f0159f468b7e02da608eafb7931e7c0e4769e8bd887f616687455cc2a824a4') {
+      this.wrongAnswerText = 'lol no'
+    } else if (hashedInput === 'ba0238fbd311655c86961e45905537ce4a5c3a04756d420dae2fae7f10a03af7' || hashedInput === 'e3c04dfa6e1192a9b21bd2b9565d2b2cd6d316ee6b95a5e0a8eeaaf31b402985') {
+      this.wrongAnswerText = "Yes, but not the answer I'm looking for"
     } else {
       this.wrongAnswerText = "Nope, try again"
     }
