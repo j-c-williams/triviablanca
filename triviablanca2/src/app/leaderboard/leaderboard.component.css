@@ -10,6 +10,10 @@
     text-align: right;
 }
 
+.leaderboard-entry-name {
+    text-aligh: center;
+}
+
 .restart-game-button {
     margin: 1em;
 }
