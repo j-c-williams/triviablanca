@@ -29,7 +29,7 @@ export class AnagramComponent {
     this.wrongAnswerText = ""
         
     if (hashedInput === this.correctAnswer || hashedInput === 'ab45e8474269b026f668d49860b36850122e18a50d5ea38f3fefdae08261865c') {
-      this.router.navigate(['../themaker']);
+      this.router.navigate(['../farrier']);
     } else {
       this.wrongAnswerText = "Nope, try again"
     }
